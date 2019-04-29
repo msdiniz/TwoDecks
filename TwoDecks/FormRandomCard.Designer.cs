@@ -1,6 +1,6 @@
 ﻿namespace TwoDecks
 {
-    partial class Form1
+    partial class FormRandomCard
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonRandomCard = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonRandomCard
+            // 
+            this.buttonRandomCard.Location = new System.Drawing.Point(68, 64);
+            this.buttonRandomCard.Name = "buttonRandomCard";
+            this.buttonRandomCard.Size = new System.Drawing.Size(74, 35);
+            this.buttonRandomCard.TabIndex = 0;
+            this.buttonRandomCard.Text = "Random Card";
+            this.buttonRandomCard.UseVisualStyleBackColor = true;
+            this.buttonRandomCard.Click += new System.EventHandler(this.buttonRandomCard_Click);
+            // 
+            // FormRandomCard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(199, 190);
+            this.Controls.Add(this.buttonRandomCard);
+            this.Name = "FormRandomCard";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonRandomCard;
     }
 }
 

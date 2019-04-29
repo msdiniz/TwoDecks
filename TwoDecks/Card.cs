@@ -19,5 +19,31 @@ namespace TwoDecks
         {
             get { return Value.ToString() + " of " + Suit.ToString(); }
         }
+        public override string ToString()
+        {
+            return Name;
+        }
+        public static bool DoesCardMatch(Card cardToCheck, Suits suit)
+        {
+            if (cardToCheck.Suit == suit)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool DoesCardMatch(Card cardToCheck, Values value)
+        {
+            if (cardToCheck.Value == value)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
